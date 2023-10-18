@@ -1,0 +1,494 @@
+main {
+  padding-bottom: 10010px;
+  margin-bottom: -10000px;
+  float: left;
+  width: 100%;
+  background: #f6f6f6 0% 0% no-repeat padding-box;
+}
+
+#nav {
+  float: left;
+  width: 260px;
+  margin-left: -260px;
+  padding-bottom: 10010px;
+  margin-bottom: -10000px;
+  background: #f6f6f6 0% 0% no-repeat padding-box;
+}
+
+#wrapper {
+  overflow: hidden;
+}
+
+#content {
+  margin-right: 250px; /* Same as 'nav' width */
+  background: var(--unnamed-color-302ca2) 0% 0% no-repeat padding-box;
+}
+
+.innertube {
+  margin: 15px; /* Padding for content */
+  margin-top: 0;
+}
+
+h1 {
+  width: 100%;
+  text-align: right;
+  border-bottom: 1px solid #302ca2;
+  line-height: 0.1em;
+  margin: 40px 0 40px;
+  font-family: "Cairo";
+  font-size: 24px;
+}
+
+h1 span {
+  background: #f6f6f6 0% 0% no-repeat padding-box;
+  padding: 0px 0px 0px 30px;
+}
+
+h2 {
+  text-align: left;
+  line-height: 0.1em;
+  margin: -43px 0 40px;
+  font-family: "Cairo";
+  font-size: 16px;
+}
+
+h2 span {
+  background: #f6f6f6 0% 0% no-repeat padding-box;
+  padding: 5px 25px 5px 25px;
+  border: 1px solid #302ca2;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+h2 span:hover {
+  background: #eaeaea 0% 0% no-repeat padding-box;
+  padding: 5px 25px 5px 25px;
+  border: 1px solid #302ca2;
+  border-radius: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul a {
+  color: darkgreen;
+  text-decoration: none;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  align-items: stretch;
+}
+.grid > article {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+  background-color: #ffffff;
+}
+.grid > article .fav {
+  position: absolute;
+  right: 0px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.grid > article .discount {
+  position: absolute;
+  background-color: #23104e;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+  width: 26px;
+  height: 26px;
+  font-family: "Cairo";
+}
+.grid > article .Newdiscount {
+  position: absolute;
+  background-color: #26a37c;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+  width: 26px;
+  height: 26px;
+  font-family: "Cairo";
+}
+.grid > article img {
+  max-width: 100%;
+  margin: auto;
+
+}
+
+.pimg {
+  margin: auto;
+  display: flex;
+}
+.text {
+  padding: 0 10px 10px;
+}
+.text h3 {
+  text-align: right;
+  color: #032326;
+  font-family: "Cairo";
+  font-size: 16px;
+  height: 25px;
+  overflow: hidden;
+}
+.text p {
+  color: #23104e;
+  font-size: 14px;
+  font-family: "Cairo";
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 35px;
+
+}
+.text span {
+  color: #302ca2;
+  font-size: 18px;
+  font-family: "Cairo";
+  text-decoration: line-through;
+  position: absolute;
+  right: 10px;
+  margin-top: -25px;
+  opacity: 0.7;
+}
+
+.text > button {
+  position: relative;
+  background: #302ca2;
+  border: 0;
+  color: white;
+  width: 159px;
+  height: 36px;
+  font-family: "Cairo";
+  font-size: 18px;
+  border-radius: 10px;
+  text-align: center;
+  float: right;
+  margin-bottom: 15px;
+}
+
+.text > button:hover {
+  cursor: pointer;
+  background-color: #000000;
+}
+
+.text > button img {
+  position: absolute;
+  margin-top: 5px;
+  right: 5px;
+}
+
+.share img {
+  margin-top: 7px;
+  margin-left: 7px;
+}
+
+.side {
+  background: #f6f6f6 0% 0% no-repeat padding-box;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.side h3 {
+  font-family: "Cairo";
+  text-align: right;
+  font-size: 18px;
+  color: #032326;
+  margin: 25px 20px 25px;
+}
+
+.product-card {
+  background-color: #fdfefe;
+  max-width: 550px;
+  min-height: 140px;
+  margin: 0 auto;
+  // margin-top: 50px;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  color: #919495;
+  font-weight: normal;
+  text-align: left;
+  font-size: 16px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.product-card .fav {
+  position: absolute;
+  right: 0px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.product-card .discount {
+  position: absolute;
+  background-color: #23104e;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+  width: 26px;
+  height: 26px;
+  font-family: "Cairo";
+}
+
+.product-card .Newdiscount {
+  position: absolute;
+  background-color: #26a37c;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+  width: 26px;
+  height: 26px;
+  font-family: "Cairo";
+}
+
+.product-details {
+  width: 44%;
+  float: left;
+  height: 100%;
+  padding: 5px;
+  text-align: right;
+  position: absolute;
+
+  h4 {
+    color: #032326;
+    font-family: "Cairo";
+    font-size: 16px;
+    height: 25px;
+    overflow: hidden;
+    margin: 0px;
+    text-align: right;
+  }
+
+  p {
+    color: #23104e;
+    font-size: 14px;
+    font-family: "Cairo";
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+  }
+}
+
+.product-details span {
+  color: #302ca2;
+  font-size: 18px;
+  font-family: "Cairo";
+  text-decoration: line-through;
+  position: absolute;
+  right: 5px;
+  margin-top: -3px;
+  opacity: 0.7;
+}
+.product-image {
+  position: absolute;
+  float: right;
+  right: 0px;
+  img {
+    max-width: 400px;
+  }
+}
+
+.product-details .share {
+  margin-top: 30px;
+  margin-left: 7px;
+  position: relative;
+}
+
+// change the title style
+
+span {
+  position: relative;
+  cursor: pointer;
+}
+
+span[aria-label]:after {
+  opacity: 0;
+  content: attr(aria-label);
+  padding: 5px 5px;
+  position: absolute;
+  left: -250%;
+  top: -100%;
+  white-space: nowrap;
+  z-index: 20;
+  background: #23104e 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  transition: opacity 0.5s;
+  pointer-events: none;
+  color: #f6f6f6;
+}
+
+span[aria-label]:hover:after {
+  opacity: 0.75;
+  transition-delay: 0.1s;
+}
+
+@media (max-width: 1280px) {
+  .text > button {
+    position: relative;
+    background: #302ca2;
+    border: 0;
+    color: white;
+    width: 140px;
+    height: 36px;
+    font-family: "Cairo";
+    font-size: 18px;
+    border-radius: 10px;
+    text-align: center;
+    float: right;
+    margin-bottom: 15px;
+  }
+  .text > button img {
+    position: absolute;
+    margin-top: 5px;
+    right: 5px;
+  }
+
+  .share img {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .text > button {
+    position: relative;
+    background: #302ca2;
+    border: 0;
+    color: white;
+    width: 100px;
+    height: 36px;
+    font-family: "Cairo";
+    font-size: 18px;
+    border-radius: 10px;
+    text-align: center;
+    float: right;
+    margin-bottom: 15px;
+  }
+  .text > button img {
+    display: none;
+  }
+
+  .share img {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+}
+@media (max-width: 1024px) {
+  #nav {
+    display: none;
+  }
+  #wrapper {
+    overflow: hidden;
+  }
+
+  #content {
+    margin-right: 0px; /* Same as 'nav' width */
+    background: var(--unnamed-color-302ca2) 0% 0% no-repeat padding-box;
+  }
+
+  .text > button {
+    position: relative;
+    background: #302ca2;
+    border: 0;
+    color: white;
+    width: 110px;
+    height: 36px;
+    font-family: "Cairo";
+    font-size: 18px;
+    border-radius: 10px;
+    text-align: center;
+    float: right;
+    margin-bottom: 15px;
+  }
+  .text > button img {
+    display: none;
+  }
+
+  .share img {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 900px) {
+  #content {
+    margin-right: 0px; /* Same as 'nav' width */
+    background: var(--unnamed-color-302ca2) 0% 0% no-repeat padding-box;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    align-items: stretch;
+  }
+  .text > button {
+    position: relative;
+    background: #302ca2;
+    border: 0;
+    color: white;
+    width: 110px;
+    height: 36px;
+    font-family: "Cairo";
+    font-size: 18px;
+    border-radius: 10px;
+    text-align: center;
+    float: right;
+    margin-bottom: 15px;
+  }
+  .text > button img {
+    display: none;
+  }
+
+  .share img {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: stretch;
+  }
+  .share img {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    align-items: stretch;
+  }
+}

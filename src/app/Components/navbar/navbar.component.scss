@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  .nav {
+    height: 50px;
+    width: 100%;
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    position: sticky;
+    top: 70px;
+    z-index: 10;
+  
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+.active{
+  background: #eaeaea 0% 0% no-repeat padding-box;
+  font-weight: bold;
+
+}
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 10px 25px 10px 25px;
+    text-decoration: none;
+    color: #302ca2;
+    font-size: 16px;
+    
+}
+  
+  .nav > .nav-links > a:hover {
+    background-color: #00000033;
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: #00000033;
+      color: #302ca2;
+
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #302ca2;
+      cursor:pointer;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      width: 100%;
+      background-color: #b7aeca;
+      max-height: 0px;
+      transition: all 0.5s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+      display: inline;
+
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+      text-align: right;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      max-height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      max-height:250px;
+      overflow-y: hidden;
+      z-index: 10;
+
+    }
+  }
